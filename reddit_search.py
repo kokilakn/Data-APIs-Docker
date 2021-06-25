@@ -11,7 +11,7 @@ import datetime
 from sentiment import *
 
 
-client = pymongo.MongoClient("mongodb+srv://KokilaReddy:KokilaReddy@cluster0.5nrpf.mongodb.net/Sociolitic?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv")
 db = client.Social_media_data
 Reddit = db.reddit
 Reddit_count = db.reddit_count
@@ -19,7 +19,7 @@ Total_count = db.total_count
 Reddit_comments = db.reddit_comment
 
 def reddithot(Search,number=100):
-    reddit = praw.Reddit(client_id='qReU5pXkg46LcA', client_secret='HmxBqKB7ua_rbNVW3_8BUAg3kvlE4Q', user_agent='media monitoring')
+    reddit = praw.Reddit(client_id='clientid', client_secret='clientsecret', user_agent='useragent')
     subreddit = reddit.subreddit(Search).hot(limit=number)
     top_subreddit = subreddit
     topics_dict = { "Source":[],\
