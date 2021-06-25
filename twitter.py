@@ -7,11 +7,11 @@ import datetime
 from sentiment import *
 
 
-consumer_key = "OaE3eeWXCp1G3ACVdDUNLnPkw"
-consumer_secret = "y87lVHLWdq27bmo18xWASIJKjmxQQ4NjEQflBLFg8AnpTwEccV"
-access_token = "1361882810848452610-Z1dQ2INKhBzuGtxsKiSjj495EoHzRg"
-access_token_secret = "9IFhQtI0H5D3nOR4ok2fUfpreFJqjmLNTLNYif7EEvO3S"
-client = pymongo.MongoClient("mongodb+srv://KokilaReddy:KokilaReddy@cluster0.5nrpf.mongodb.net/Sociolitic?retryWrites=true&w=majority")
+consumer_key = "consumer_key"
+consumer_secret = "consumer_secret"
+access_token = "access_token"
+access_token_secret = "access_token_secret"
+client = pymongo.MongoClient("mongodb+srv")
 db = client.Social_media_data
 Twitter = db.twitter
 Twitter_count = db.twitter_count
