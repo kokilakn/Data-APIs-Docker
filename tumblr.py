@@ -7,7 +7,7 @@ import datetime
 import time
 from sentiment import *
 
-client = pymongo.MongoClient("mongodb+srv://KokilaReddy:KokilaReddy@cluster0.5nrpf.mongodb.net/Sociolitic?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv")
 db = client.Social_media_data
 Tumblr = db.tumblr
 Tumblr_count = db.tumblr_count
