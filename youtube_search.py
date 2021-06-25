@@ -11,7 +11,7 @@ import datetime
 from sentiment import *
 
 
-client = pymongo.MongoClient("mongodb+srv://KokilaReddy:KokilaReddy@cluster0.5nrpf.mongodb.net/Sociolitic?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv")
 db = client.Social_media_data
 YouTube = db.youTube
 Youtube_count = db.youtube_count
@@ -38,7 +38,7 @@ def Category(Id):
     return switcher.get(Id, "None")
 
 def youtube_search(q, max_results=50,order="relevance", token=None, location=None, location_radius=None):
-    DEVELOPER_KEY = "AIzaSyCLa0LoJiVAWWEX-BH4prLyldw13r0AbUI"
+    DEVELOPER_KEY = "APIKEY"
     YOUTUBE_API_SERVICE_NAME = "youtube"
     YOUTUBE_API_VERSION = "v3"
 
