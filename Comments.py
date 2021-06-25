@@ -8,12 +8,12 @@ import pymongo
 from pymongo import MongoClient
 from sentiment import *
 
-client = pymongo.MongoClient("mongodb+srv://KokilaReddy:KokilaReddy@cluster0.5nrpf.mongodb.net/Sociolitic?retryWrites=true&w=majority")
+client = pymongo.MongoClient("MONGO")
 db = client.Social_media_data
 Youtube_comments = db.youTube_comment
 
 def comments_(videoId):
-    DEVELOPER_KEY = "AIzaSyCLa0LoJiVAWWEX-BH4prLyldw13r0AbUI"
+    DEVELOPER_KEY = "APIKEY"
     YOUTUBE_API_SERVICE_NAME = "youtube"
     YOUTUBE_API_VERSION = "v3"
 
