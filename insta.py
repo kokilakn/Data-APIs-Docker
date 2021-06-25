@@ -7,7 +7,7 @@ import datetime
 from sentiment import *
 
 
-client = pymongo.MongoClient("mongodb+srv://KokilaReddy:KokilaReddy@cluster0.5nrpf.mongodb.net/Sociolitic?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv")
 db = client.Social_media_data
 Instagram = db.instagram
 Insta_count = db.instagram_count
@@ -15,7 +15,7 @@ Total_count = db.total_count
 
 
 cl = Client()
-cl.login("socio_litic", "Sociolitic")
+cl.login("username", "password")
 
 def insta(search,amount = 200):
     top_medias = cl.hashtag_medias_top(search, amount=100)
